@@ -1,8 +1,10 @@
+//  https://codeforces.com/contest/158/problem/A
 #include <iostream>
 #include <vector>
 using namespace std;
  
-int main(){
+void First()
+{
     int n, k;
     cin >> n >> k;
     vector<int>v(n);
@@ -17,10 +19,7 @@ int main(){
     }
     cout << count << endl;
 }
-#include<bits/stdc++.h>
-using namespace std;
-
-int main()
+void Second()
 {
     int cnt = 0;
     int n, k;
@@ -42,5 +41,9 @@ int main()
         }
         cout << cnt;
     }
-    return 0;
+}
+int main()
+{
+    First();
+    Second();
 }
