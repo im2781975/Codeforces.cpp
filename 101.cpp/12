@@ -338,3 +338,15 @@ int main()
     }
     return 0;
 }
+void solve()
+{
+	int a[200];
+string s; cin>>s;
+int len=s.length()/2+1;
+for(int i=0;i<len;i++)
+a[i]=s[2*i]-'0';
+sort(a,a+len);
+for(int i=0;i<len-1;i++)
+cout<<a[i]<<'+';
+cout<<a[len-1];
+}
