@@ -350,3 +350,34 @@ for(int i=0;i<len-1;i++)
 cout<<a[i]<<'+';
 cout<<a[len-1];
 }
+using namespace std;
+//bool isPrime(int k){
+  //  for (int i=2;i*i<=k;i++){
+    //    if (k%i==0) return 0;
+    //}
+    //return 1;
+//}
+int ans=0;
+void doo(){
+ 
+       string s;
+       cin>>s;
+       sort(s.begin(),s.end());
+           for(int i=s.size()/2;i<s.size();i++){
+           if(i==s.size()-1)
+                cout<<s[i];
+           else cout<<s[i]<<"+";
+}
+ 
+ 
+ 
+       }
+int main()
+{ios_base::sync_with_stdio(false); cin.tie(0); cout.tie();
+int t=1;
+ 
+while(t--){
+    doo();}
+ 
+    return 0;
+}
