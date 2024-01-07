@@ -45,13 +45,17 @@ void Second()
 void Third()
 {
     const int MAXN = 1e2;
-    int n,k,i,j,ar [ MAXN ]; 
-	cin >> n >> k;
-	while(n > i)
-		 cin >> ar[ i++ ];
-	while(ar[ j ] && ar[ j ] >= ar [ k - 1 ])
-		++j;
-	cout << j;
+    int n, k, i = 0, j = 0, arr[MAXN];
+
+    cin >> n >> k;
+
+    while (n > i)
+        cin >> arr[i++];
+
+    while (arr[j] && arr[j] >= arr[k - 1])
+        ++j;
+
+    cout << j;
 }
 int main()
 {
@@ -59,4 +63,3 @@ int main()
     Second();
     Third();
 }
-
