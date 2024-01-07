@@ -1,3 +1,17 @@
+int main() {
+int n;cin>>n;
+vc v(n);
+loop(n){
+    cin>>v[i];
+}
+int cnt = 0 ;
+loop(n-1){
+    if(v[i]==v[i+1])cnt++;
+}
+cout<<cnt;
+ 
+    return 0;
+}
 #include<bits/stdc++.h>
 using namespace std;
 int one,two,thr;
