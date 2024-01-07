@@ -1,3 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int one,two,thr;
+int main()
+{
+    int fu;cin>>fu;
+int ans=0;
+    string a,b;
+    cin>>a;
+    for(int i=1;i<a.length();i++)
+    {
+        if(a[i]==a[i-1])
+        {
+            ans++;
+        }
+    }
+    cout<<ans;
+}
 include <bits/stdc++.h>
 using namespace std;
 int main()
