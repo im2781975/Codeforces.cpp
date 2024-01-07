@@ -23,5 +23,20 @@ string s;
    cout<<s;
         return 0;
 }
- 
+int main()
+{
+    int a = 0;
+    string s;
+    cin >> s;
+    int h[s.size()/2 + 1];
+    for(int hg = 0;hg < s.size();hg += 2)
+    {
+        h[a] = s[hg];
+        a = a + 1;
+    }
+    byn_is_massive(h,s.size()/2 + 1,-48);
+    sort(h,h + s.size()/2 + 1);
+    cout_massive(h,s.size()/2 + 1,"+");
+    return 0;
+}
 
