@@ -1,0 +1,97 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <set>
+#include <cmath>
+#include <map>
+//#include <bits>
+using namespace std;
+int ans;
+int main() {
+	ios::sync_with_stdio(false) , cin.tie(0) , cout.tie(0);
+	int n;
+	string ar;
+	cin >> n >> ar;
+	for(int i = 0 ; i < n ; i++)
+	{
+		for( ; i < n && ar [ i ] == ar [ i + 1 ] ; i++)
+			ans++;
+	}
+	cout << ans;
+}
+define _USE_MATH_DEFINES
+#include<iostream>
+#include<vector>
+#include<cmath>
+#include<algorithm>
+#include<string>
+#include<map>
+#include<set>
+#include<stack>
+#include<queue>
+#include<iomanip>
+ 
+#define INF 1e18;
+ 
+using namespace std;
+ 
+typedef long long ll;
+typedef long double ld;
+ 
+ll gcd(ll a, ll b) {
+	if (a == 0 || b == 0)return a + b;
+	if (a > b)return gcd(a%b, b);
+	return gcd(a, b%a);
+}
+ 
+ 
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+	//Бустеры, ведь я умный!
+	string s;
+	ll n,ans=0;
+	cin >> n;
+	cin >> s;
+	for (int i = 0; i < n-1; i++) {
+		if (s[i] == s[i + 1])ans++;
+	}
+	cout << ans;
+	return 0;
+}
+int main()
+{
+  //code();
+ 
+  // tc
+    {
+   int n;
+   cin>>n;
+  string st ;
+  cin>>st;
+  ll cnt =0;
+  for(ll i = 0 ; i < st.size() ; i++)
+  {
+    if(st[i] == st[i+1] )
+    {
+        cnt++;
+    }
+  }
+  cout<<cnt;
+}
+}
+int main(){
+	
+	long long n,c=0;
+	string s;
+	cin>>n;
+	cin>>s;
+	for (int i = 0; i < n-1; ++i)
+	{
+		if(s[i]==s[i+1]){
+			c++;
+		}
+	}
+	cout<<c<<endl;
+}
