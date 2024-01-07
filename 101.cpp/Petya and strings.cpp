@@ -17,4 +17,34 @@ int main()
     else
         cout << 0;
 }
-
+#include<bits/stdc++.h>
+using namespace std;
+string MakeLower(string s)
+{
+    for(int i =0; i< s.size(); i++)
+    {
+        if(s[i] >='A' && s[i] <='Z')
+        {
+            s[i]+='a'-'A';
+        }
+    }
+    return s;
+}
+int main()
+{
+    string a, b;
+    cin >>a >>b;
+    a = MakeLower(a);
+    b = MakeLower(b);
+    int n =a.size() | b.size();
+    for(int i =0; i<n; i++)
+    {
+        if(a[i]!=b[i])
+        {
+            if(a[i] >b[i])
+                return cout<< 1, 0;
+            return cout<< -1, 0;
+        }
+    }
+    cout<< 0;
+}
