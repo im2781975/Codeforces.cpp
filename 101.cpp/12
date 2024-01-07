@@ -273,3 +273,20 @@ int main()
      }
  
 }
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main () {
+string s;
+cin>>s;
+sort(s.begin(), s.end());
+   string g=s.substr (s.size()/2,s.size());
+    for (int i=0 ; i<g[i];i++)
+    {
+        cout<<g[i];
+        if (i!=g.size()-1)
+            cout<<'+';
+    }
+ 
+return 0;
+}
