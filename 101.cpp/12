@@ -151,3 +151,35 @@ int main() {
        }
    }
 }
+
+//
+ 
+using namespace::std;
+int main()
+{
+    int i,j;
+    string s;
+    
+    cin >> s;
+    
+    int a=s.length();
+    
+    for (i=0; i<a-1; i++)
+    {
+        for (j=0; j<a-i-1; j++)
+        {
+            if (s[j]!='+')
+            {
+                if (s[j]>s[j+2])
+                {
+                    char temp;
+                    temp=s[j];
+                    s[j]=s[j+2];
+                    s[j+2]=temp;
+                }
+            }
+        }
+    }
+    
+    cout << s;
+}
