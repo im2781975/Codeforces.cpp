@@ -64,3 +64,18 @@ int main()
         cnt+=s[i]==s[i+1];
     cout<<cnt;
 }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n, cnt=0;
+    string st;
+    cin>> n;
+    cin>> st;
+    for(int i=0; i<n; i++)
+    {
+        for(;i <n && st[i]==st[i+1]; i++)
+            cnt++;
+    }
+    cout << cnt;
+}
