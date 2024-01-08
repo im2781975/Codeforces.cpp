@@ -153,3 +153,24 @@ int main()
     }
     cout<< s;
 }
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    cin >> s;
+    sort(s.begin(), s.end());
+    // Create a substring 'g' starting from the middle of the sorted string to the end.
+    string g = s.substr(s.size() / 2, s.size());
+
+    // Iterate through the characters in the substring 'g'.
+    for(int i = 0; i < g[i]; i++)
+    {
+        // Print the current character.
+        cout << g[i];
+        if(i != g.size() - 1)
+            cout << '+';
+    }
+    return 0;
+}
