@@ -94,3 +94,22 @@ int main()
         return 0;
     }
 }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s;
+    cin >>s;
+    vector <int> ans;
+    for(int i=0; i<s.size(); i++)
+    {
+        if(s[i]>='0' && s[i]<='9')
+            ans.push_back(s[i]-'0');
+    }
+    sort(ans.begin(), ans.end());
+    cout <<ans[0];
+    for(int i=1; i<ans.size(); i++)
+    {
+        cout<<"+" <<ans[i];
+    }
+}
