@@ -174,3 +174,16 @@ int main()
     }
     return 0;
 }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i;
+    string s;
+    cin >>s;
+    sort(s.begin(), s.end());
+    int n=s.size();
+    for(i=(n-1)/2; i<n-1; i++)
+        cout<< s[i] <<"+";
+    cout<< s[i] <<" ";
+}
