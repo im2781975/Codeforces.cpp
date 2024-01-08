@@ -136,3 +136,20 @@ int main()
             cout<< "+";
     }
 }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s;
+    cin >>s;
+    int n=s.length();
+    for(int i=0; i< n-1; i++)
+    {
+        for(int j=0; j< n-i-1; j++)
+        {
+            if(s[j]!='+' && s[j] < s[j+2])
+                    swap(s[j], s[j+2]);
+        }
+    }
+    cout<< s;
+}
